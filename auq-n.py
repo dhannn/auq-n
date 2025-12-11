@@ -1,13 +1,14 @@
 import time
-test = """set sleep, 0
-set max_sleep, 10
-add sleep, 1
-compare sleep, max_sleep, sleep_deprived
-sleep_deprived:
+test = """set counter, 0
+set max, 5
+
+loop:
+    add counter, 0
     breathe.
-    add sleep, 1
-    print sleep
-    compare sleep, max_sleep, sleep_deprived
+    add counter, 1
+    print counter
+    compare counter, max, loop
+    breathe.
 """
 
 lines = [x.strip() for x in test.splitlines()]
@@ -58,7 +59,7 @@ while pc < len(lines):
     old_pc = pc
     line = lines[pc]
 
-    if line.endswith(':'):
+    if line.endswith(':') or line.strip() == '':
         pc += 1
         continue
 
