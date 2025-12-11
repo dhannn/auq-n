@@ -1,0 +1,8 @@
+set sleep, 0
+set max_sleep, 10
+add sleep, 1
+compare sleep, max_sleep, sleep_deprived
+sleep_deprived:
+    add sleep, 1
+    print sleep
+    compare sleep, max_sleep, sleep_deprived

@@ -230,11 +230,30 @@ if __name__ == '__main__':
         print(f'[auq n!] 💥 {error_msg}')
         print(f'            {suggestion}\n')
 
-        if random.random() < 0.1:
-            time.sleep(random.uniform(1.0, 5.0))
-            print(f'            ok fine. here...')
-            print(f'            {type(e).__name__}: {e}\n')
-            print(f'            happy now? still not helping you fix it.\n')
+        if random.random() < 0.15:
+            time.sleep(random.uniform(1.0, 2.0))
+    
+            reluctant_msgs = [
+                "ok fine. here...",
+                "ugh. fine.",
+                "*sigh* whatever. here...",
+                "you're annoying. fine.",
+                "this is the only time.",
+            ]
+
+            print(f'            {random.choice(reluctant_msgs)}')
+            time.sleep(random.uniform(2.0, 4.0))
+            if random.random() < 0.7:
+                print(f'            {type(e).__name__}: {e}\n')
+                print(f'            happy now? still not helping you fix it.\n')
+            else:
+                bait_switch_msg = [
+                    'nvm lol',
+                    'i got tired.',
+                    'PSYCHHH!!!',
+                ]
+
+                print(f'            {random.choice(bait_switch_msg)}')
 
     finally:
         input('[Press any key to continue...]\n')
