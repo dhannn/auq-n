@@ -1,14 +1,15 @@
 import time
 test = """set counter, 0
-set max, 5
+set max, 10
 
 loop:
+    add counter, 0
     add counter, 0
     breathe.
     add counter, 1
     print counter
-    compare counter, max, loop
     breathe.
+    compare counter, max, loop
 """
 
 lines = [x.strip() for x in test.splitlines()]
