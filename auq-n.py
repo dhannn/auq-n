@@ -1,18 +1,29 @@
 import time
-test = """set counter, 0
-set max, 10
+import sys
 
-loop:
-    add counter, 0
-    add counter, 0
-    breathe.
-    add counter, 1
-    print counter
-    breathe.
-    compare counter, max, loop
-"""
+if len(sys.argv) < 2:
+    print("[auq n!] 🤨 What am I supposed to run? Air?\n")
+    print("         Usage: python auq-n.py <filename>")
+    print("         Try again when you've figured out how command-line arguments work.\n")
+    sys.exit(1)
 
-lines = [x.strip() for x in test.splitlines()]
+filename = sys.argv[1]
+
+try:
+    with open(filename, 'r') as f:
+        source = f.read()
+except FileNotFoundError:
+    print(f"[auq n!] 🔍 File '{filename}' not found.\n")
+    print(f"         Did you forget where you saved it? Or does it simply not exist?")
+    print(f"         Either way, I can't run what I can't see.\n")
+    sys.exit(1)
+except Exception as e:
+    print(f"[auq n!] 💥 Something went wrong reading your file.\n")
+    print(f"         Error: {e}")
+    print(f"         Maybe check your file permissions? Or your life choices?\n")
+    sys.exit(1)
+
+lines = [x.strip() for x in source.splitlines()]
 
 labels = {}
 _vars = {}
