@@ -231,7 +231,7 @@ if __name__ == '__main__':
         print(f'            {suggestion}\n')
 
         if random.random() < 0.15:
-            time.sleep(random.uniform(1.0, 2.0))
+            time.sleep(random.uniform(2.0, 4.0))
     
             reluctant_msgs = [
                 "ok fine. here...",
@@ -242,6 +242,7 @@ if __name__ == '__main__':
             ]
 
             print(f'            {random.choice(reluctant_msgs)}')
+
             time.sleep(random.uniform(2.0, 4.0))
             if random.random() < 0.7:
                 print(f'            {type(e).__name__}: {e}\n')
