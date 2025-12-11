@@ -8,7 +8,7 @@ if __name__ == '__main__':
     try:
 
         if len(sys.argv) < 2:
-            print("[auq n!] 🤨 What am I supposed to run? Air?\n")
+            print("[auq n!] 😍 go girl give us nothing\n")
             print("         Usage: python auq-n.py <filename>")
             print("         Try again when you've figured out how command-line arguments work.\n")
             sys.exit(1)
@@ -251,6 +251,13 @@ if __name__ == '__main__':
                     'nvm lol',
                     'i got tired.',
                     'PSYCHHH!!!',
+                    'actually no.',
+                    'changed my mind.',
+                    'too much work.',
+                    'not worth it.',
+                    'you wish.',
+                    'maybe next time.',
+                    'jk lmaooo',
                 ]
 
                 print(f'            {random.choice(bait_switch_msg)}')
