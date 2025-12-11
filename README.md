@@ -1,5 +1,5 @@
 # auq-n: a stress-aware programming language
-> ### ayoko na (Tagalog: *“I don’t want to do this anymore”*)
+> ### ayoko na (Tagalog: *😩🙅"I don’t want to do this anymore"*)
 
 A stress-aware programming language for the modern developer
 ## Overview
