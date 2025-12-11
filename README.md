@@ -1,5 +1,5 @@
 # auq-n: a stress-aware programming language
-> ### ayoko na (Tagalog: 😩🙅*"I don’t want to do this anymore"*)
+> ### ayoko na (Tagalog: 😩🙅 *"I don’t want to do this anymore"*)
 
 A stress-aware programming language for the modern developer
 ## Overview
@@ -14,6 +14,10 @@ Modern software development operates under dual constraints:
 1. **Productivity expectations** must be maintained
 
 auq-n is the first language to formalize both constraints at the language level, creating a more **realistic computational model** that mirrors actual developer experience.
+
+auq-n is a meditation on modern labor conditions expressed through computational constraints. Every program is a negotiation between output and exhaustion, productivity and survival.
+
+There is **no winning—only** degrees of making it through.
 
 ### Key Innovations
 
@@ -78,7 +82,7 @@ Each instruction modifies the program’s stress state:
 |`add`      |+8           |0.15s         |
 |`mul`      |+15          |0.25s         |
 |`print`    |+3           |0.08s         |
-|`breathe.`  |-20          |1.00s         |
+|`breathe.` |-20          |1.00s         |
 |`rejuv!`   |-40          |1.80s         |
 
 Higher-complexity operations (multiplication, division) carry greater stress costs, reflecting their cognitive overhead.
@@ -87,14 +91,14 @@ Higher-complexity operations (multiplication, division) carry greater stress cos
 
 The language provides two stress-reduction primitives:
 
-- breathe. — Moderate stress reduction with moderate time cost
-- rejuv! — Significant stress reduction with significant time cost
+- `breathe.` — Moderate stress reduction with moderate time cost
+- `rejuv!` — Significant stress reduction with significant time cost
 
 Strategic use of these primitives is essential for program completion.
 
 ### Productivity Requirements
 
-Programs must maintain a minimum throughput of 2.5 instructions per second. Excessive use of stress-reduction primitives can cause productivity to fall below this threshold, resulting in termination.
+Programs must maintain a minimum throughput of **2.5 instructions per second**. Excessive use of stress-reduction primitives can cause productivity to fall below this threshold, resulting in termination.
 
 -----
 
@@ -203,15 +207,15 @@ Analysis: The program was terminated for insufficient productivity. Too much res
 
 ### Productivity Padding
 
-Sometimes maintaining throughput requires… creative solutions.
+Sometimes maintaining throughput requires... **creative solutions**.
 
 ```
 set counter, 0
 set max, 10
 
 loop:
-    add counter, 0      ; busy work
-    add counter, 0      ; busy work
+    add counter, 0      ; look busy
+    add counter, 0      ; look busy
     breathe.
     add counter, 1
     print counter
@@ -240,9 +244,9 @@ Output:
             Your reward: another job to run. These processes ain't gonna run themselves!
 ```
 
-Analysis: By inserting a mathematically neutral operation (`add counter, 0`), we maintain productivity metrics while managing stress levels.
+**Analysis**: By inserting a mathematically neutral operation (`add counter, 0`), we maintain productivity metrics while managing stress levels.
 
-> 💡 Pro tip: Operations that don’t change program state still count toward throughput. This is not a bug—it’s by design.
+> 💡 Pro tip: Operations that don’t change program state still count toward throughput. This is not a bug—it’s **by design**.
 
 ### Best Practices
 
@@ -345,11 +349,11 @@ breathe.         # -20 stress (net: -5)
 
 ## Technical Specifications
 
-Paradigm: Imperative, stress-managed  
-Typing: Dynamic (float-based)  
-Execution: Interpreted with real-time delays  
-Resource Model: Dual-constraint (stress + productivity)  
-Turing Completeness: Theoretically complete; practically constrained
+**Paradigm**: Imperative, stress-managed  
+**Typing**: Dynamic (float-based)  
+**Execution**: Interpreted with real-time delays  
+**Resource Model**: Dual-constraint (stress + productivity)  
+**Turing Completeness**: Theoretically complete; practically constrained
 
 -----
 
@@ -357,9 +361,9 @@ Turing Completeness: Theoretically complete; practically constrained
 
 auq-n is implemented in Python 3.10+ and uses pattern matching for instruction dispatch. The runtime maintains three primary state variables:
 
-- sc — Stress counter
-- productivity — Instructions per second
-- pc — Program counter
+- `sc` — Stress counter
+- `productivity` — Instructions per second
+- `pc` — Program counter
 
 Execution continues until program completion or constraint violation.
 
@@ -369,13 +373,13 @@ Execution continues until program completion or constraint violation.
 
 auq-n opens several areas for future investigation:
 
-1. Computational Complexity Under Stress Constraints  
+1. **Computational Complexity Under Stress Constraints**  
    What is the class of problems solvable within stress/productivity bounds?
-1. Optimal Stress Management Strategies  
+1. **Optimal Stress Management Strategies**  
    Can we formalize patterns for stress-efficient algorithms?
-1. Language Extensions  
+1. **Language Extensions**  
    Could team-based stress pooling or variable stress costs enable new patterns?
-1. Empirical Developer Experience  
+1. **Empirical Developer Experience**  
    Does programming in auq-n affect developer awareness of cognitive load?
 
 -----
@@ -383,9 +387,9 @@ auq-n opens several areas for future investigation:
 
 ### Is this an esoteric programming language?
 
-No. auq-n is a serious programming language with a well-defined execution model and formal semantics.
+No. auq-n is a **serious programming language** with a well-defined execution model and formal semantics.
 
-The term “esoteric” implies novelty for novelty’s sake. auq-n introduces stress-based resource management because traditional languages fail to model real computational constraints. Dismissing innovations as “esoteric” simply because they challenge conventional paradigms is reductive.
+The term “esoteric” implies novelty for novelty’s sake. auq-n introduces stress-based resource management because traditional languages **fail to model real computational constraints**. Dismissing innovations as “esoteric” simply because they challenge conventional paradigms is reductive.
 
 If explicit resource management (memory, CPU cycles) is considered legitimate, why not cognitive resource management? auq-n takes the logical next step.
 
@@ -400,7 +404,7 @@ The terminology reflects the nature of the constraints being modeled. We could h
 
 ### Isn’t this just making programming artificially harder?
 
-No. auq-n makes existing difficulty explicit.
+No. auq-n makes **existing difficulty explicit**.
 
 Developers already manage cognitive load, context switching, and productivity pressure. Traditional languages simply ignore these costs. auq-n formalizes them, enabling:
 
@@ -408,16 +412,16 @@ Developers already manage cognitive load, context switching, and productivity pr
 - Explicit optimization strategies
 - More realistic performance modeling
 
-“Artificially harder” suggests these constraints are invented. They’re not—they’re observed and formalized.
+“Artificially harder” suggests these constraints are invented. They’re not—they’re **observed and formalized**.
 
 ### Why would anyone use this?
 
 auq-n is designed for:
 
-- Educational contexts — Teaching resource management under multiple constraints
-- Research applications — Studying stress-bounded computation
-- Cognitive load modeling — Simulating developer experience
-- Algorithmic challenges — Solving optimization problems with novel constraints
+- **Educational contexts** — Teaching resource management under multiple constraints
+- **Research applications** — Studying stress-bounded computation
+- **Cognitive load modeling** — Simulating developer experience
+- **Algorithmic challenges** — Solving optimization problems with novel constraints
 
 Additionally, developers report that programming in auq-n increases awareness of cognitive costs in their primary language work.
 
@@ -425,7 +429,7 @@ Additionally, developers report that programming in auq-n increases awareness of
 
 No. Stress tracking is fundamental to auq-n’s execution model. Disabling it would be equivalent to disabling type checking in a statically-typed language—it removes core functionality.
 
-If you need a language without stress constraints, traditional languages remain available.
+If you need a language without stress constraints, traditional languages remain available. Use those, duh.
 
 ### What about `add x, 0`? Isn’t that a “cheat”?
 
@@ -441,7 +445,7 @@ Theoretically, yes—auq-n has all necessary computational primitives (arithmeti
 
 Practically, Turing completeness is constrained by stress/productivity bounds. Some problems that are theoretically computable may be practically unsolvable within constraint limits.
 
-This is not a limitation—it’s an accurate model. Not all theoretically solvable problems are practically solvable given real-world resource constraints.
+This is not a limitation—it’s an **accurate model**. Not all theoretically solvable problems are practically solvable given real-world resource constraints.
 
 ### Who is this for?
 
@@ -456,7 +460,7 @@ If you believe programming languages should model the full context of computatio
 
 ### Is this a joke?
 
-auq-n is a serious exploration of stress-based resource management in programming languages.
+auq-n is a **serious exploration** of stress-based resource management in programming languages.
 
 That it challenges assumptions about what programming languages should model does not make it a joke. Many innovations were initially dismissed before gaining acceptance.
 
@@ -482,4 +486,4 @@ auq-n is influenced by:
 - Resource-aware programming languages
 - Cognitive load theory
 - Contemporary software development practices
-- Contemporary art installations that speak to us like [Cam't Help Myself](https://en.wikipedia.org/wiki/Can%27t_Help_Myself_(Sun_Yuan_and_Peng_Yu))
+- Contemporary art installations that speak to us like [Can't Help Myself](https://en.wikipedia.org/wiki/Can%27t_Help_Myself_(Sun_Yuan_and_Peng_Yu))
