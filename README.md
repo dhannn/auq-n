@@ -4,7 +4,7 @@
 A stress-aware programming language for the modern developer
 ## Overview
 
-auq-n (pronounced *“ayoko na”*) is a novel programming language that introduces **stress-based resource management** as a first-class language feature. Unlike traditional languages that abstract away the cognitive and emotional costs of computation, auq-n makes these costs explicit and enforceable.
+auq-n (pronounced *"ayoko na"*) is a novel programming language that introduces **stress-based resource management** as a first-class language feature. Unlike traditional languages that abstract away the cognitive and emotional costs of computation, auq-n makes these costs explicit and enforceable.
 
 ## Design Philosophy
 
@@ -25,7 +25,7 @@ There is **no winning—only** degrees of making it through.
 Every instruction carries an explicit stress cost, reflecting its cognitive complexity. Programs must manage accumulated stress or face termination—much like developers must manage burnout in real-world scenarios.
 
 **Productivity Metrics**  
-The runtime enforces minimum throughput requirements (2.5 instructions/second), ensuring programs maintain “acceptable” output levels. This creates a dual-constraint optimization problem unique to auq-n.
+The runtime enforces minimum throughput requirements (2.5 instructions/second), ensuring programs maintain "acceptable" output levels. This creates a dual-constraint optimization problem unique to auq-n.
 
 **Temporal Realism**  
 Instructions execute with realistic delays proportional to their complexity. A mul operation genuinely takes longer than print, reflecting the actual cognitive overhead of mathematical operations.
@@ -134,7 +134,7 @@ Output:
 
 ### Attempt 2: Adding Self-Care
 
-*“Have you tried just… breathing?”* — Management
+*"Have you tried just… breathing?"* — Management
 ```
 set counter, 0
 set max, 5
@@ -174,7 +174,7 @@ Output:
 
 ### Attempt 3: More Self-Care
 
-*“Try breathing twice! Self-care is important.”* — HR
+*"Try breathing twice! Self-care is important."* — HR
 
 ```
 set counter, 0
@@ -316,29 +316,31 @@ Instructions execute with delays proportional to their complexity, creating temp
 ### Throughput Optimization
 
 When stress management requires operations that reduce productivity, consider inserting neutral operations:
+```
 add x, 0        # Neutral arithmetic
 sub x, 0        # Neutral arithmetic
 print x         # Low-stress communication
+```
 
 These operations maintain throughput without adding functional side effects.
 
 ### Strategic Recovery
 
-rejuv! operations carry high time costs. Use sparingly and only when stress approaches critical thresholds:
-# Instead of:
+`rejuv!` operations carry high time costs. Use sparingly and only when stress approaches critical thresholds:
+Instead of:
 ```
 breathe.
 breathe.
 ```
 
-# Consider:
+Consider:
 ```
 rejuv!
 ```
 
 ### Stress Budgeting
 
-Complex operations (`mul`, `div`) should be “budgeted” within a program’s stress capacity:
+Complex operations (`mul`, `div`) should be "budgeted" within a program’s stress capacity:
 ```
 set x, 5
 mul x, 3        # +15 stress
@@ -389,11 +391,11 @@ auq-n opens several areas for future investigation:
 
 No. auq-n is a **serious programming language** with a well-defined execution model and formal semantics.
 
-The term “esoteric” implies novelty for novelty’s sake. auq-n introduces stress-based resource management because traditional languages **fail to model real computational constraints**. Dismissing innovations as “esoteric” simply because they challenge conventional paradigms is reductive.
+The term "esoteric" implies novelty for novelty’s sake. auq-n introduces stress-based resource management because traditional languages **fail to model real computational constraints**. Dismissing innovations as "esoteric" simply because they challenge conventional paradigms is reductive.
 
 If explicit resource management (memory, CPU cycles) is considered legitimate, why not cognitive resource management? auq-n takes the logical next step.
 
-### Why do programs “burnout” or get “fired”?
+### Why do programs "burnout" or get "fired"?
 
 These are technical terms describing constraint violations:
 
@@ -412,7 +414,7 @@ Developers already manage cognitive load, context switching, and productivity pr
 - Explicit optimization strategies
 - More realistic performance modeling
 
-“Artificially harder” suggests these constraints are invented. They’re not—they’re **observed and formalized**.
+"Artificially harder" suggests these constraints are invented. They’re not—they’re **observed and formalized**.
 
 ### Why would anyone use this?
 
@@ -431,9 +433,9 @@ No. Stress tracking is fundamental to auq-n’s execution model. Disabling it wo
 
 If you need a language without stress constraints, traditional languages remain available. Use those, duh.
 
-### What about `add x, 0`? Isn’t that a “cheat”?
+### What about `add x, 0`? Isn’t that a "cheat"?
 
-There are no “cheats” in auq-n—only strategies.
+There are no "cheats" in auq-n—only strategies.
 
 Neutral operations maintain throughput metrics while managing stress. This is a valid optimization technique within the language’s constraint model.
 
